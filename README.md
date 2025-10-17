@@ -1,8 +1,8 @@
 # 📈 Financial Analysis Platform
 
 A comprehensive Python-based platform for stock market analysis, correlation networks, and portfolio insights. Built with modular architecture for extensible financial analytics.
-![Stock Network](https://github.com/AshishKothariii/sp500-network-analysis/raw/main/examples/stock_network.png)
-![Correlation Network](https://github.com/AshishKothariii/sp500-network-analysis/raw/main/examples/correlation_network.png)
+![Stock Network](https://github.com/AshishKothariii/S-P500-Algorithmic-Trading-Research-Platform/raw/main/examples/stock_network.png)
+![Correlation Network](https://github.com/AshishKothariii/S-P500-Algorithmic-Trading-Research-Platform/raw/main/examples/correlation_network.png)
 
 ## 🚀 Features
 
