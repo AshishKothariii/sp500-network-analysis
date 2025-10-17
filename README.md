@@ -1,10 +1,13 @@
 # 📈 Financial Analysis Platform
 
 A comprehensive Python-based platform for stock market analysis, correlation networks, and portfolio insights. Built with modular architecture for extensible financial analytics.
+![Stock Network](https://github.com/AshishKothariii/sp500-network-analysis/raw/main/examples/stock_network.png)
+![Correlation Network](https://github.com/AshishKothariii/sp500-network-analysis/raw/main/examples/correlation_network.png)
 
 ## 🚀 Features
 
 ### 📊 Core Analysis
+
 - **Market Data Management**: Automated data fetching and updates
 - **Market Cap Updates**: Real-time market capitalization updates via yFinance
 - **Returns Calculation**: Efficient vectorized return computations
@@ -12,18 +15,20 @@ A comprehensive Python-based platform for stock market analysis, correlation net
 - **Correlation Analysis**: Stock relationship mapping and network graphs
 
 ### 🔍 Advanced Analytics
+
 - **Top/Bottom Performers**: Heap-based efficient ranking algorithms
 - **Sharpe Ratio Analysis**: Risk-adjusted performance metrics
 - **Correlation Networks**: Directed graphs based on market cap and correlations
 - **Multi-period Analysis**: Flexible timeframe performance tracking
 
 ### 📈 Visualization
+
 - **Static Network Plots**: Matplotlib-based network visualizations
 - **Interactive Charts**: Plotly-powered interactive network exploration
 - **Minimal Layouts**: Clean, publication-ready visualizations
 
-
 ## 🏗️ Architecture
+
 ```
 financial-analysis-platform/
 ├── src/
@@ -43,7 +48,7 @@ financial-analysis-platform/
 │ └── visualizer.py
 ├── examples/
 │ └── demo_notebook.ipynb # Complete analysis pipeline
-└── requirements.txt 
+└── requirements.txt
 ```
 
 ## 🛠️ Installation
@@ -52,17 +57,24 @@ financial-analysis-platform/
    ```bash
    git clone https://github.com/yourusername/financial-analysis-platform.git
    cd financial-analysis-platform
-   
+
+   ```
 2. **Install Dependencies**
-    ```bash
+   ```bash
    pip install -r requirements.txt
+   ```
 3. **Setup Database**
-    ```bash
+   ```bash
    - Ensure your SQLite database is in the examples/ folder
    - Update connection path in connection_manager.py if needed
+   ```
+
 ## 📖 Usage
-   ### Quick Start
-   Open the Jupyter notebook for a complete analysis pipeline:
+
+### Quick Start
+
+Open the Jupyter notebook for a complete analysis pipeline:
+
 ```
 # examples/demo_notebook.ipynb
 from src.data.company_data_manager import CompanyDataManager
@@ -84,7 +96,9 @@ top_stocks = analyzer.topk_stocks(30, 10)  # Top 10 over 30 days
 ```
 
 ### Key Analysis Examples
-   Market Cap Update
+
+Market Cap Update
+
 ```
 # Update market caps to latest closing prices
 from src.data.market_cap_updater import MarketCapUpdater
@@ -101,11 +115,13 @@ print(f"Updated market caps for {len(updated_market_caps)} companies")
 
 ```
 
-   Market Overview
+Market Overview
+
 ```# Sector distribution, market caps, company info
 sector_ticker_dict = company_mgr.get_sector_dict()
 market_cap_dict = company_mgr.get_market_cap_dict()
 ```
+
 Performance Tracking
 
 ```
@@ -116,13 +132,16 @@ worst_performers = analyzer.leastk_stocks(30, 10)
 # Multi-period analysis
 performance = analyzer.analyze_multiple_periods("FDS", [10, 30, 50])
 ```
-   Risk-Adjusted Returns
+
+Risk-Adjusted Returns
+
 ```
 from src.analysis.sharpe_ratio_calculator import SharpeRatioCalculator
 
 sharpe_calc = SharpeRatioCalculator(returns_df, tickers)
 top_sharpe = sharpe_calc.get_top_sharpe_stocks(10)
 ```
+
 Correlation Networks
 
 ```
@@ -142,6 +161,7 @@ visualizer.plot_interactive()
 ```
 
 ## 📊 Sample Outputs
+
 ```
 The platform generates:
 
@@ -160,7 +180,9 @@ The platform generates:
 - Minimal clean layouts
 
 ```
+
 ## 🎯 Use Cases
+
 - Portfolio Optimization: Identify diversification opportunities with current market caps
 
 - Sector Analysis: Understand industry correlations with up-to-date valuations
@@ -172,6 +194,7 @@ The platform generates:
 - Academic Research: Financial network analysis with current valuation data
 
 ## 🔧 Configuration
+
 - Database: SQLite with configurable connection paths
 
 - Data Sources: yFinance integration for real-time market data and market caps
@@ -181,5 +204,3 @@ The platform generates:
 - Thresholds: Adjustable correlation thresholds (default: 0.70-0.83)
 
 - Timeframes: Flexible analysis periods (10-365 days)
-
-
