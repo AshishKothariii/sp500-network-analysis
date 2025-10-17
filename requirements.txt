@@ -1,0 +1,18 @@
+# Core data analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Financial data
+yfinance>=0.2.0
+
+# Network analysis & visualization
+networkx>=3.0
+matplotlib>=3.5.0
+plotly>=5.0.0
+
+# Database
+sqlite3
+
+# Development & Jupyter
+jupyter>=1.0.0
+ipykernel>=6.0.0
